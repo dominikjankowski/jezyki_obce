@@ -1,0 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+@mixin center-box($property) {
+    position: absolute;
+    top: $property;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
