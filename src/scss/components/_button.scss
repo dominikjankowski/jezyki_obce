@@ -1,3 +1,49 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn {
+    
+    &:link,
+    &:visited {
+        display: inline-block;
+        padding: 2.5rem 4rem;
+        transition: all .2s;
+        border-radius: 100px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+        position: relative;
+    }
+
+    &:hover {
+        transform: translateY(-.3rem);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+        
+    }
+
+    &:active {
+        transform: translateY(0);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    &--green {
+        color: $white;
+        background-color: $button-header-color-light;
+        border: 1px solid $white;
+        font-weight: 700;
+
+        &:hover{
+            background-color: $button-header-color-dark;
+        }
+    }
+
+    &--animated {
+        animation-name: moveInTop;
+        animation-duration: 1s;
+        animation-delay: .7s;
+        animation-fill-mode: backwards;
+    }
+
+}

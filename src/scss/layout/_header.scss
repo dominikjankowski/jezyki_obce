@@ -13,6 +13,7 @@
 
     &__text-box {
         @include center-box(35%);
-        width: 70%; 
+        text-align: center;
+        width: 90%; 
     }
 }
