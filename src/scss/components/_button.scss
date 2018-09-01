@@ -6,36 +6,36 @@
     &:link,
     &:visited {
         display: inline-block;
-        padding: 2.5rem 4rem;
+        padding: 2.5rem 3.5rem;
         transition: all .2s;
         border-radius: 100px;
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.5rem;
-        letter-spacing: .2rem;
+        letter-spacing: 2px;
         position: relative;
     }
 
     &:hover {
         transform: translateY(-.3rem);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 20px rgba($black, 0.2);
 
         
     }
 
     &:active {
         transform: translateY(0);
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 5px 10px rgba($black, 0.2);
     }
 
-    &--green {
+    &--header {
         color: $white;
-        background-color: $button-header-color-light;
+        background-color: $color-orange-light;
         border: 1px solid $white;
         font-weight: 700;
 
         &:hover{
-            background-color: $button-header-color-dark;
+            background-color: $color-orange-dark;
         }
     }
 

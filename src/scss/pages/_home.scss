@@ -1,3 +1,22 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.section-about {
+    background-color: $color-grey-light-2;
+    padding: 30rem 0;
+    margin-top: -10vh;
+}
+
+.section-future {
+    padding: 30rem 0;
+    margin-top: -11.5rem;
+    background-image: linear-gradient(to right bottom, rgba($color-primary-1, .7), rgba($color-primary-2, .7)) ,url(../img/future-big.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: skewY(-4deg);
+
+    &>* {
+        transform: skewY(4deg);
+    }
+}

@@ -4,7 +4,7 @@
 
 .header {
     height: 95vh;
-    background-image: linear-gradient(to right bottom, rgba($header-gradient-first, .8), rgba($header-gradient-second, .8)) ,url(../img/header-big.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-1, .7), rgba($color-primary-2, .7)) ,url(../img/header-big.jpg);
     background-position: 50% 80%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,7 +12,6 @@
     position: relative;
 
     &__text-box {
-        @include center-box(35%);
-        text-align: center;
+        @include center-box(40%);
        }
 }
