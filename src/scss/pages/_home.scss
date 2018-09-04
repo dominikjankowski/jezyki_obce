@@ -3,13 +3,13 @@
 // -----------------------------------------------------------------------------
 .section-about {
     background-color: $color-grey-light-2;
-    padding: 30rem 0;
-    margin-top: -10vh;
+    padding: 25rem 0;
+    margin-top: -9.5vh;
 }
 
 .section-future {
-    padding: 30rem 0;
-    margin-top: -11.5rem;
+    padding: 20rem 0;
+    margin-top: -5.5rem;
     background-image: linear-gradient(to right bottom, rgba($color-primary-1, .7), rgba($color-primary-2, .7)) ,url(../img/future-big.jpg);
     background-position: center;
     background-size: cover;
@@ -19,4 +19,10 @@
     &>* {
         transform: skewY(4deg);
     }
+}
+
+.section-languages {
+    padding: 20rem 0;
+    background-color: $color-grey-light-2;
+    margin-top: -5.5rem;
 }
