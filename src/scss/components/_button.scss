@@ -18,14 +18,14 @@
 
     &:hover {
         transform: translateY(-.3rem);
-        box-shadow: 0 10px 20px rgba($black, 0.2);
+        box-shadow: $shadow-medium;
 
         
     }
 
     &:active {
         transform: translateY(0);
-        box-shadow: 0 5px 10px rgba($black, 0.2);
+        box-shadow: $shadow-small;
     }
 
     &--header {

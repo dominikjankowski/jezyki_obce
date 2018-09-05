@@ -2,11 +2,12 @@
     perspective: 500rem;
     position: relative;
     height: 40rem;
-    font-size: 3rem;
-    color: $white;
+    
     
 
     &__side {
+        font-size: 3rem;
+        color: $white;
         transition: all 1s ease;
         position: absolute;
         top: 0;
@@ -14,25 +15,70 @@
         height: 40rem;
         width: 100%;
         backface-visibility: hidden;
-
-        &--front {
-            background-color: rgba(0, 255, 255, 1);
-            background-image: url(img/united-kingdom.png);
-            height: 100%;
-        }
+        border-radius: 3px;
+        box-shadow: $shadow-big;
 
         &--back {
             transform: rotateY(180deg);
-            background-color: orangered;
         }
     }
     
 
     &:hover &__side--front {
-        transform: rotateY(180deg);
+        transform: rotateY(-180deg);
     }
 
     &:hover &__side--back {
         transform: rotateY(0);
     }
+}
+
+.content-container {
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 300;
+    background-blend-mode: color;
+
+    &--united-kingdom {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)), url(../img/united-kingdom.svg);
+    }
+
+    &--germany {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/germany.svg);
+    }
+
+    &--russia {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/russia.svg);
+    }
+
+    &--italy {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/italy.svg);
+        color: $black;
+    }
+
+    &--france {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/france.svg);
+        color: $black;
+    }
+
+    &--spain {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/spain.svg);
+    }
+
+    &--finland {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/finland.svg);
+        color: $black;
+    }
+
+    &--other {
+        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),rgba($color-orange-dark, 1);
+        color: $black;
+    }
+    
 }
