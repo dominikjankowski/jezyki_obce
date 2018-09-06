@@ -1,8 +1,8 @@
 .card {
-    perspective: 500rem;
+    perspective: 150rem;
     position: relative;
-    height: 40rem;
-    
+    height: 55rem;
+    width: auto;
     
 
     &__side {
@@ -12,7 +12,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 40rem;
+        height: 100%;
         width: 100%;
         backface-visibility: hidden;
         border-radius: 3px;
@@ -33,52 +33,121 @@
     }
 }
 
-.content-container {
+.front-content {
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: 135%;
+    background-repeat: no-repeat;
     color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 4rem;
     font-weight: 300;
-    background-blend-mode: color;
-
+    
     &--united-kingdom {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)), url(../img/united-kingdom.svg);
+        background-image:  url(../img/united-kingdom.svg);
     }
 
     &--germany {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/germany.svg);
+        background-image: url(../img/germany.svg);
     }
 
     &--russia {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/russia.svg);
+        background-image:url(../img/russia.svg);
     }
 
     &--italy {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/italy.svg);
+        background-image:url(../img/italy.svg);
         color: $black;
     }
 
     &--france {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/france.svg);
+        background-image: url(../img/france.svg);
         color: $black;
     }
 
     &--spain {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/spain.svg);
+        background-image: url(../img/spain.svg);
     }
 
     &--finland {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),url(../img/finland.svg);
+        background-image: url(../img/finland.svg);
         color: $black;
     }
 
     &--other {
-        background-image: linear-gradient(rgba($black, .15), rgba($black, .15)),rgba($color-orange-dark, 1);
+        background-image: rgba($color-orange-dark, 1);
         color: $black;
     }
     
+}
+
+.back-content {
+    height: 100%;
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: $color-grey-dark-3;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+
+    &__left {
+        padding: 2rem 14rem 3rem 13rem;
+        
+        &--paragraph {
+            line-height: 2.2;
+            word-spacing: 4px;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-grey-light-3;
+            }
+        }
+    }
+
+    &__right {
+        font-size: 1.6rem;
+        font-weight: 400;
+        position: absolute;
+        @include center-box(90%);
+        width: 100%;
+
+        &--link {
+            text-decoration: none;
+            color: $color-grey-dark-3;
+            display: inline-block;
+            width: 35%;
+            padding: 1.5rem 1rem;
+            border: 2px solid $color-grey-dark-2;
+            border-radius: 3px;
+            transition: all .4s;
+
+           
+
+            &:hover {
+                transform: translateY(-.7rem);
+                box-shadow: $shadow-medium;
+                border: 2px solid $black;
+            }
+            &:active {
+                transform: translateY(-.3rem);
+                box-shadow: $shadow-small;
+            }
+            
+
+            &:not(:last-child) {
+                margin-right: 3rem;
+            }
+            
+        }
+
+        &--icon {
+            font-size: 4rem;
+            background-image: linear-gradient(to right, $color-orange-light, $color-orange-dark);
+            display: inline-block;
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-left: 1rem;
+        }
+    }
 }
