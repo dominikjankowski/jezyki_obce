@@ -1,0 +1,13 @@
+.about-me {
+    padding: 3rem 14rem;
+    background-color: $color-grey-light-1;
+    transform: skewX(-10deg);
+
+    &>* {
+        transform: skewX(10deg);
+    }
+
+    &__content {
+
+    }
+}

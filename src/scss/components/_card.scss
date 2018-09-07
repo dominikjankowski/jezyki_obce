@@ -112,35 +112,6 @@
         @include center-box(90%);
         width: 100%;
 
-        &--link {
-            text-decoration: none;
-            color: $color-grey-dark-3;
-            display: inline-block;
-            width: 35%;
-            padding: 1.5rem 1rem;
-            border: 2px solid $color-grey-dark-2;
-            border-radius: 3px;
-            transition: all .4s;
-
-           
-
-            &:hover {
-                transform: translateY(-.7rem);
-                box-shadow: $shadow-medium;
-                border: 2px solid $black;
-            }
-            &:active {
-                transform: translateY(-.3rem);
-                box-shadow: $shadow-small;
-            }
-            
-
-            &:not(:last-child) {
-                margin-right: 3rem;
-            }
-            
-        }
-
         &--icon {
             font-size: 4rem;
             background-image: linear-gradient(to right, $color-orange-light, $color-orange-dark);
@@ -148,6 +119,6 @@
             -webkit-background-clip: text;
             color: transparent;
             margin-left: 1rem;
-        }
+        } 
     }
 }

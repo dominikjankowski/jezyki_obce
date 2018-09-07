@@ -46,4 +46,30 @@
         animation-fill-mode: backwards;
     }
 
+    &--card {
+        color: $color-grey-dark-3;
+        width: 40%;
+       
+        &:link,
+        &:visited {
+            padding: 1.5rem .5rem;
+            border-radius: 3px;
+            transition: all .4s;
+            border: 2px solid $color-grey-dark-2;
+        }
+
+        &:hover {
+            border: 2px solid $black;
+            transform: translateY(-.7rem);
+        }
+
+        &:active {
+            transform: translateY(-.3rem);
+        }
+
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
 }
+
