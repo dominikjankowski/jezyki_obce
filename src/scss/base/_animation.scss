@@ -45,3 +45,68 @@
         transform: translateY(0);
     }
 }
+
+@keyframes border-aniamtion-1 {
+
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent; 
+        border-bottom-color: transparent; 
+        border-left-color: $color-orange-light; 
+
+    }
+    50% {
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent; 
+        border-bottom-color: $color-orange-light; 
+        border-left-color: $color-orange-light; 
+
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent; 
+        border-bottom-color: $color-orange-light; 
+        border-left-color: $color-orange-light;
+    }
+}
+
+@keyframes border-aniamtion-2 {
+
+    0% {
+        width: 0;
+        height: 0;
+        border-top-color: $color-orange-light;
+        border-right-color: transparent; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+
+    }
+    50% {
+        width: 100%;
+        height: 0;
+        border-top-color: $color-orange-light;
+        border-right-color: $color-orange-light; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent; 
+
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        border-top-color: $color-orange-light;
+        border-right-color: $color-orange-light; 
+        border-bottom-color: transparent; 
+        border-left-color: transparent;
+    }
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}

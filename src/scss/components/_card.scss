@@ -36,13 +36,13 @@
 .front-content {
     height: 100%;
     background-position: center;
-    background-size: 135%;
+    background-size:cover;
     background-repeat: no-repeat;
     color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 300;
     
     &--united-kingdom {
@@ -73,11 +73,37 @@
 
     &--finland {
         background-image: url(../img/finland.svg);
+        
+    }
+
+    &--norway{
+        background-image: url(../img/norway.svg);
+    }
+
+    &--china{
+        background-image: url(../img/china.svg);
+        color: $white;
+    }
+
+    &--kenya{
+        background-image: url(../img/kenya.svg);
         color: $black;
     }
 
-    &--other {
-        background-image: rgba($color-orange-dark, 1);
+    &--arabic{
+        background-color: $color-green-arabic;
+    }
+
+    &--mongolia{
+        background-image: url(../img/mongolia.svg);
+    }
+    
+    &--tibet{
+        background-image: url(../img/tibet.svg);
+    }
+    
+    &--indonesia{
+        background-image: url(../img/indonesia.svg);
         color: $black;
     }
     

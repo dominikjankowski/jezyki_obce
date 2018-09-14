@@ -1,13 +1,117 @@
 .about-me {
-    padding: 3rem 14rem;
+    padding: 8rem 13rem;
     background-color: $color-grey-light-1;
-    transform: skewX(-10deg);
+    transform: skewX(-5deg);
+    transition: all .5s;
+    border-radius: 3px;
+    position: relative;
+    border-radius: 5px;
 
-    &>* {
-        transform: skewX(10deg);
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: transparent;
+        width: 0;
+        height: 0;
+        border: 1.5px solid transparent;
+        border-radius: 5px;
+        z-index: -1;
+    }
+    
+
+    &:hover {
+        transform: translate(1rem, -2rem) skewX(0);
+
+        &>* {
+            transform: skewX(0);
+        }
+
+        &::before {
+            animation: border-aniamtion-2 .5s linear forwards;
+        }
+
+        &::after {
+            animation: border-aniamtion-1 .5s linear forwards;
+        }
+
+        & .about-me__right {
+            border: 1px solid $color-orange-light;
+            transform: translateY(0);
+            opacity: 1;
+        }
     }
 
-    &__content {
+    &>* {
+        transform: skewX(5deg);
+        transition: all .5s;
+    }
 
+    
+
+
+    &__right {
+        height: 15rem;
+        width: 15rem;
+        border-radius: 50%;
+        transition: .5s all;
+        transform: translateX(15rem);
+        opacity: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-orange-dark;
+        font-weight: 300;
+        margin-left: 5rem;
+
+        &--icon {
+            display: inline-block; 
+            font-size: 6rem;
+
+           &-first {
+               font-size: 3rem;
+           }
+            
+        }
+        &--paragraph {
+            font-size: 6rem;
+        }
+    }
+
+    
+}
+
+.figure-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.figure {
+    width: 20%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+
+    &:hover {
+        cursor: pointer;
+
+        &:hover .figure__paragraph {
+            opacity: 1;
+            color: $color-blue-light;
+        }
+    }
+
+    &__paragraph {
+        opacity: 0;
+        transition: all .4s;
+        font-size: 2rem;
+        font-weight: 100;
+        margin-top: .5rem;
     }
 }
