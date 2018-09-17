@@ -36,11 +36,11 @@
         transform: translateY(10rem);
     }
 
-    80%{
+    80% {
         transform: translateY(-1rem);
     }
-    
-    100%{
+
+    100% {
         opacity: 1;
         transform: translateY(0);
     }
@@ -52,26 +52,28 @@
         width: 0;
         height: 0;
         border-top-color: transparent;
-        border-right-color: transparent; 
-        border-bottom-color: transparent; 
-        border-left-color: $color-orange-light; 
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: $color-orange-light;
 
     }
+
     50% {
         width: 0;
         height: 100%;
         border-top-color: transparent;
-        border-right-color: transparent; 
-        border-bottom-color: $color-orange-light; 
-        border-left-color: $color-orange-light; 
+        border-right-color: transparent;
+        border-bottom-color: $color-orange-light;
+        border-left-color: $color-orange-light;
 
     }
+
     100% {
         width: 100%;
         height: 100%;
         border-top-color: transparent;
-        border-right-color: transparent; 
-        border-bottom-color: $color-orange-light; 
+        border-right-color: transparent;
+        border-bottom-color: $color-orange-light;
         border-left-color: $color-orange-light;
     }
 }
@@ -82,31 +84,68 @@
         width: 0;
         height: 0;
         border-top-color: $color-orange-light;
-        border-right-color: transparent; 
-        border-bottom-color: transparent; 
-        border-left-color: transparent; 
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
 
     }
+
     50% {
         width: 100%;
         height: 0;
         border-top-color: $color-orange-light;
-        border-right-color: $color-orange-light; 
-        border-bottom-color: transparent; 
-        border-left-color: transparent; 
+        border-right-color: $color-orange-light;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
 
     }
+
     100% {
         width: 100%;
         height: 100%;
         border-top-color: $color-orange-light;
-        border-right-color: $color-orange-light; 
-        border-bottom-color: transparent; 
+        border-right-color: $color-orange-light;
+        border-bottom-color: transparent;
         border-left-color: transparent;
     }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: scale(1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.5) skew(10deg, -10deg);
+    }
+
+    60% {
+        transform: scale(1.5) skew(-10deg, 10deg);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+
+    100% {
+
+        transform: scale(1);
+    }
 }

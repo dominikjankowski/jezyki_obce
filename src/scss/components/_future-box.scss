@@ -1,8 +1,10 @@
 .future-box {
     background-color: rgba($white, .8);
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     letter-spacing: 1px;
-    padding: 2.5rem;
+    word-spacing: 2px;
+    font-weight: 400;
+    padding: 2rem;
     text-align: center;
     border-radius: 3px;
     box-shadow: $shadow-big;
@@ -11,7 +13,7 @@
 
     &__icon {
         font-size: 6rem;
-        margin: 2.5rem 0 3.5rem 0;
+        margin: 2.5rem 0 2rem 0;
         color: transparent;
         background-image: linear-gradient(to right, $color-blue-light, $color-blue-dark);
         display: inline-block;

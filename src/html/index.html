@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 
 <head>
     <meta charset="UTF-8">
@@ -18,15 +18,19 @@
 
 <body>
 
+
+    <div class="navigation"></div>
+
     <header class="header">
         <div class="header__text-box u-center-text">
             <h1 class="heading-primary u-margin-bottom-medium">
                 <span class="heading-primary--main u-margin-bottom-small">Twoja przygoda</span>
                 <span class="heading-primary--sub">z językami obcymi</span>
             </h1>
-            <a href="#yourAdventureStart" class="btn btn--header btn--animated">Zaczyna się tutaj</a>
+            <a data-scroll href="#bazinga" class="btn btn--header btn--animated" id="scrollToLanguages">Zaczyna się
+                tutaj</a>
         </div>
-        <h4 class="heading-quaternary">Prowadzę korepetycje językowe od ponad 20 lat</h4>
+        <h4 class="heading-quaternary u-center-text ">Prowadzę korepetycje językowe od ponad 20 lat</h4>
     </header>
 
     <main>
@@ -100,7 +104,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-languages" id="yourAdventureStart">
+        <section class="section-languages" id="bazinga">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary">
                     Moja <span class="heading-secondary--span">Oferta</span> korepetycji
@@ -127,7 +131,7 @@
                                     <p class="back-content__left--paragraph">konwersacje</p>
                                 </div>
                                 <div class="back-content__right">
-                                    <a href="#" class="btn btn--card">Moje Materiały<i class="back-content__right--icon icon-basic-server-download"></i></a>
+                                    <a download href="download/zestaw-rekrutacyjny.pdf" class="btn btn--card">Moje Materiały<i class="back-content__right--icon icon-basic-server-download"></i></a>
                                     <a href="#" class="btn btn--card">Sprawdź się<i class="back-content__right--icon icon-basic-sheet-pen"></i></a>
                                 </div>
                             </div>
@@ -632,6 +636,12 @@
             </div>
         </section>
     </main>
+    <footer class="footer u-center-text">
+        <a href="#sidebar" class="btn btn--animated btn--footer u-margin-bottom-medium toggle-btn">Kontakt</a>
+        <p class="paragraph ">Copyright © 2018 by Bogumiła Doliniak. All rights reserved.</p>
+        <p class="paragraph ">Icon made by Freepik from <a href="https://www.flaticon.com/" class=" btn btn--flaticon"
+                target="_blank" rel="noopener noreferrer">www.flaticon.com</a></p>
+    </footer>
 
     <div class="modal" id="modal-1">
         <div class="modal__content">
@@ -657,31 +667,48 @@
         </div>
     </div>
     <div class="modal" id="modal-2">
-            <div class="modal__content">
-                <div class="modal__content--left">
-                    <h3 class="heading-tetriary heading-tetriary--modal u-margin-bottom-small">"PRZEŻYŁAM MOBBING"</h3>
-                    <p class="paragraph paragraph--modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
-                        iste.
-                        Illo id qui unde nisi corrupti sint maxime corporis natus! Vero aperiam fuga voluptatibus
-                        mollitia repellat similique ratione voluptates explicabo. Lorem ipsum, dolor sit amet
-                        consectetur adipisicing elit. Nobis, nostrum. Suscipit vel aliquam ipsum aut corporis nisi,
-                        dolor expedita dolore sapiente voluptatum excepturi tempora fugiat animi itaque non magni.
-                        Distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptate a corporis
-                        necessitatibus laudantium non odit amet est doloribus, minima, dolorem, unde sint odio quo
-                        distinctio temporibus incidunt ipsum ipsa.
-                    </p>
-                </div>
-                <div class="modal__content--right">
-                    <span class="modal__close" id="close-2">&times</span>
-                    <img src="img/book-2.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie"
-                        class="modal__img">
-                </div>
+        <div class="modal__content">
+            <div class="modal__content--left">
+                <h3 class="heading-tetriary heading-tetriary--modal u-margin-bottom-small">"PRZEŻYŁAM MOBBING"</h3>
+                <p class="paragraph paragraph--modal">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos,
+                    iste.
+                    Illo id qui unde nisi corrupti sint maxime corporis natus! Vero aperiam fuga voluptatibus
+                    mollitia repellat similique ratione voluptates explicabo. Lorem ipsum, dolor sit amet
+                    consectetur adipisicing elit. Nobis, nostrum. Suscipit vel aliquam ipsum aut corporis nisi,
+                    dolor expedita dolore sapiente voluptatum excepturi tempora fugiat animi itaque non magni.
+                    Distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum voluptate a corporis
+                    necessitatibus laudantium non odit amet est doloribus, minima, dolorem, unde sint odio quo
+                    distinctio temporibus incidunt ipsum ipsa.
+                </p>
+            </div>
+            <div class="modal__content--right">
+                <span class="modal__close" id="close-2">&times</span>
+                <img src="img/book-2.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie"
+                    class="modal__img">
             </div>
         </div>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar__toggle toggle-btn"></div>
+        <form action="https://formspree.io/dondomalesko1234@gmail.com" method="post" class="sidebar__form">
+            <input class="sidebar__form--input" type="text" name="Name" placeholder="Imię i Nazwisko" required>
+            <input class="sidebar__form--input" type="email" name="Email" placeholder="Email" required>
+            <textarea class="sidebar__form--textarea" name="Message" cols="40" rows="10" placeholder="Wyślij mi wiadomość"
+                required></textarea>
+            <input class="btn btn--header btn--animated sidebar__form--submit" type="submit" value="Wyślij">
+        </form>
+
+        <ul class="sidebar__list">
+            <li class="sidebar__list--item">Bogumiła Doliniak</li>
+            <li class="sidebar__list--item">Ulica Ludwika Kondratowicza 18</li>
+            <li class="sidebar__list--item">03-285 Warszawa (Targówek)</li>
+        </ul>
+    </div>
 
 
+    <script src="js/script.min.js"></script>
 
-    <script src="../js/script.min.js"></script>
 </body>
 
 </html>

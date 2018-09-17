@@ -10,7 +10,7 @@
 .section-future {
     padding: 20rem 0;
     margin-top: -5.5rem;
-    background-image: linear-gradient(to right bottom, rgba($color-primary-1, .7), rgba($color-primary-2, .7)) ,url(../img/future-big.jpg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-1, .7), rgba($color-primary-2, .7)), url(../img/future-big.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -30,4 +30,10 @@
 .section-teacher {
     padding: 15rem 0;
     background-color: $color-grey-light-3;
+}
+
+.footer {
+    padding: 8.5rem 0;
+    background-color: $footer-color;
+    border-top: .5rem solid $color-orange-light;
 }
