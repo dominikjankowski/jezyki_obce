@@ -16,3 +16,47 @@
         clear: both;
     }
 }
+
+//MEDIA QUERY MANAGER
+
+@mixin respond($property) {
+    @if $property == px400 {
+        @media (max-width: 25em) {@content};
+    }
+    @if $property == px500 {
+        @media (max-width: 31.25em) {@content};
+    }
+    @if $property == px600 {
+        @media (max-width: 37.5em) {@content};
+    }
+    @if $property == px700 {
+        @media (max-width: 43.75em) {@content};
+    }
+    @if $property == px800 {
+        @media (max-width: 50em) {@content};
+    }
+    @if $property == px900 {
+        @media (max-width: 56.25em) {@content};
+    }
+    @if $property == px1000 {
+        @media (max-width: 62.5em) {@content};
+    }
+    @if $property == px1100 {
+        @media (max-width: 68.75em) {@content};
+    }
+    @if $property == px1200 {
+        @media (max-width: 75em) {@content};
+    }
+    @if $property == px1300 {
+        @media (max-width: 81.25em) {@content};
+    }
+    @if $property == px1400 {
+        @media (max-width: 87.5em) {@content};
+    }
+    @if $property == px1500 {
+        @media (max-width: 93.75em) {@content};
+    }
+    @if $property == px1600 {
+        @media (max-width: 100em) {@content};
+    }
+}

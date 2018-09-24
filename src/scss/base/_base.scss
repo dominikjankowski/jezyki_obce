@@ -13,11 +13,29 @@
 html {
     //This defines what 1rem is
     font-size: 62.5%;
+
+    @include respond(px1600) {
+        font-size: 57.5%;
+    }
+
+    @include respond(px1300) {
+        font-size: 51.5%;
+    }
+
+    @include respond(px1000) {
+        font-size: 47.5%;
+    }
+
+    
 }
 
 body {
     box-sizing: border-box;
     padding: 2rem;
+
+    @include respond(px1100) {
+        padding: 0;
+    }
 }
  
 ::selection {

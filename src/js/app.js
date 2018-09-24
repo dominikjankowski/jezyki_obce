@@ -4,6 +4,41 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //tutaj skrypty
 
+    //MENU
+
+    let menuBut = document.getElementById("menu-but");
+    let menuNav = document.getElementById("menu-nav");
+    let menuBg = document.getElementById("menu-bg");
+    let menuLink = document.getElementsByClassName("navigation__link");
+
+
+
+    menuBut.onclick = function () {
+
+
+        menuNav.classList.toggle("navigation__nav--active");
+        menuBg.classList.toggle("navigation__background--active");
+
+        for (let i = 0; i < menuLink.length; i++) {
+            menuLink[i].classList.toggle("navigation__link--active");
+        }
+    }
+
+    function dropMe() {
+        for (let i = 0; i < menuLink.length; i++) {
+            menuLink[i].onclick = function () {
+                menuNav.classList.remove("navigation__nav--active");
+                menuBg.classList.remove("navigation__background--active");
+                for (let i = 0; i < menuLink.length; i++) {
+                    menuLink[i].classList.remove("navigation__link--active");
+                }
+            }
+
+        }
+    }
+    dropMe();
+
+
     //MODAL 
     let figureFirst = document.getElementById("figure-1");
     let figureSecond = document.getElementById("figure-2");
@@ -42,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function hideShow() {
         for (let i = 0; i < toggleBtn.length; i++) {
             toggleBtn[i].onclick = function () {
-                sidebar.classList.toggle("active");
+                sidebar.classList.toggle("sidebar--active");
             }
         }
     }

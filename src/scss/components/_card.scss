@@ -1,7 +1,7 @@
 .card {
     perspective: 150rem;
     position: relative;
-    height: 55rem;
+    min-height: 70rem;
     width: auto;
     
 
@@ -20,12 +20,19 @@
 
         &--back {
             transform: rotateY(180deg);
+            @include respond(px1400) {
+                transform: rotateY(0);
+            }
         }
     }
     
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
+
+        @include respond(px1400) {
+            transform: rotateY(0);
+        }
     }
 
     &:hover &__side--back {
@@ -44,6 +51,16 @@
     align-items: center;
     font-size: 4.5rem;
     font-weight: 300;
+
+
+
+   
+
+    & p {
+        @include respond(px1400) {
+            opacity: 0; 
+        }
+    }
     
     &--united-kingdom {
         background-image:  url(../img/united-kingdom.svg);
@@ -116,10 +133,25 @@
     color: $color-grey-dark-3;
     text-transform: uppercase;
     text-align: center;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(px1400) {
+        color: $white;
+        transform: rotateY(0);
+        background-image: linear-gradient(rgba($color-grey-dark-3, .8), rgba($color-grey-dark-3, .8));
+        font-weight: 400;
+    }
+
 
     &__left {
         padding: 2rem 8rem 3rem 8rem;
+
+        @include respond(px500) {
+            padding: 2rem 2rem;
+        }
         
         &--paragraph {
             line-height: 2.2;
@@ -127,6 +159,18 @@
 
             &:not(:last-child) {
                 border-bottom: 1px solid $color-grey-light-3;
+
+                @include respond(px1400) {
+                    border-bottom: 1px solid $color-grey-dark-2;
+                  
+                }
+            }
+
+            &:first-child {
+                color: $color-orange-dark;
+                border-bottom: none;
+                font-size: 3rem;
+                letter-spacing: 3px;
             }
         }
     }
@@ -134,9 +178,15 @@
     &__right {
         font-size: 1.6rem;
         font-weight: 400;
-        position: absolute;
-        @include center-box(90%);
         width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        @include respond(px1400) {
+            flex-direction: column;
+        }
 
         &--icon {
             font-size: 4rem;
@@ -147,4 +197,8 @@
             margin-left: 1rem;
         } 
     }
+}
+
+.card{
+
 }

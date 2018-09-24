@@ -22,6 +22,10 @@
 
     &:hover {
         transform: translateY(-1rem) scale(1.05);
+
+        @include respond(px1400) {
+            transform: none;
+        } 
     }
 
     &__text {

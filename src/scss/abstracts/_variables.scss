@@ -13,14 +13,17 @@ $color-primary-2: rgb(134, 74, 18);
 
 $color-grey-light-1: rgb(245, 245, 245);
 $color-grey-light-2: rgb(247, 247, 247);
-$color-grey-light-3: rgb(228, 228, 228);
+$color-grey-light-3: rgb(240, 240, 240);
 
 $color-grey-dark-1: rgb(93, 93, 93);
 $color-grey-dark-2: rgb(136, 136, 136);
 $color-grey-dark-3: rgb(51, 51, 51);
 
+
 $color-orange-light: rgb(245, 155, 15);
+$color-orange-light-2: rgb(270, 180, 40);
 $color-orange-dark: rgb(240, 150, 10);
+$color-orange-dark-2: rgb(200, 110, 0);
 
 $color-blue-light: rgb(85, 185, 255);
 $color-blue-dark: rgb(0, 125, 205);
@@ -34,6 +37,7 @@ $shadow-big: 0 1.5rem 4rem rgba($black, 0.2);
 
 //Grid
 
-$grid-width: 118rem;
+$grid-width: 120rem;
 $gutter-vertical: 8rem;
-$gutter-horizontal: 5.5rem;
+$gutter-vertical-small: 6rem;
+$gutter-horizontal: 6rem;

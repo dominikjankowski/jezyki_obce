@@ -1,0 +1,164 @@
+.navigation {
+
+    &__button {
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        height: 7rem;
+        width: 7rem;
+        background-color: $white;
+        border-radius: 50%;
+        z-index: 2000;
+        box-shadow: 0px 0px 1px 2px $color-orange-light-2;
+        cursor: pointer;
+        transition: all .2s;
+
+        @include respond(px1100) {
+            top: 4rem;
+            right: 4rem;
+            height: 6rem;
+            width: 6rem;
+        }
+        
+
+        &:hover {
+            box-shadow: 0px 0px 10px 2px $color-orange-light-2; 
+            transform: scale(1.1);
+        } 
+    }
+
+    &__icon {
+
+        @include center-box(50%);
+        
+        &,
+        &::after,
+        &::before {
+            height: 2px;
+            width: 3rem;
+            background-color: $black;
+            display: inline-block;
+        }
+
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+        }
+
+        &::after {
+            top: 1rem; 
+        }
+
+        &::before {
+            top: -1rem; 
+        }
+
+    }
+
+    &__background {
+        position: fixed;
+        top: 7rem;
+        right: 7rem;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        background-image: radial-gradient( $color-orange-light-2, $color-orange-dark-2);
+        z-index: 1000;
+        transition: all .8s .2s;
+
+        @include respond(px1100) {
+            top: 4.5rem;
+            right: 4.5rem;
+        }
+
+        &--active {
+            transform: scale(140);
+        }
+    }
+
+    &__nav {
+        height: 100vh;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1500;
+        opacity: 0;
+        transition: all .2s cubic-bezier(0.68, -0.55, 0.265, 1.55) .4s;
+
+        &--active {
+            opacity: 1;
+            width: 100%;
+        }
+    }
+
+    &__list {
+        @include center-box(50%);
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    &__item {
+
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+        
+    }
+
+    &__link {
+
+        &:link,
+        &:visited {
+        display: inline-block;
+        visibility: hidden;
+        text-decoration: none;
+        color: $white;
+        font-size: 3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        word-spacing: 4px;
+        padding: 3rem 4rem;
+        transition: all .4s;
+        background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $white 50%);
+        background-size: 220%;
+        
+       
+        
+
+        @include respond(px1100) {
+            font-size: 2.7rem;
+            letter-spacing: 1px;
+            word-spacing: 2px;
+            background-image: none;
+        }
+
+        @include respond(px700) {
+            font-size: 2.2rem;
+            padding: 1.5rem 2rem;
+        }
+        }
+
+        &:hover,
+        &:active {
+            background-position: 100%;
+            color: $color-orange-dark;
+            transform: translateX(1rem);
+
+            @include respond(px1400) {
+                color: white;
+                transform: translateX(0);
+            } 
+        }
+
+        &--active:link,
+        &--active:visited {
+            visibility: visible;
+        }
+    }
+}

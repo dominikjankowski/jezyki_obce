@@ -1,24 +1,40 @@
 .sidebar {
     background-image: linear-gradient(rgba($color-blue-light, .95), rgba($color-primary-1, .95));
     position: fixed;
-    top: 35%;
-    left: -78rem;
-    transform: translateY(-50%);
-    max-width: 80rem;
-    padding: 5rem;
-    border-radius: 0 1rem 1rem 0;
-    transition: all 1s;
+    top: 50%;
+    left: -51%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s;
+    z-index: 3000;
 
-
-    &:not(:first-child) {
+    &__content {
         display: flex;
         flex-direction: row;
+        padding: 0 2rem;
+
+        @include respond(px500) {
+            flex-wrap: wrap;
+            justify-content: center;
+            overflow: scroll;
+        }
     }
 
     &__form {
         display: flex;
         flex-direction: column;
         margin-right: 8rem;
+
+        @include respond(px700) {
+            margin-right: 2rem; 
+            margin-bottom: 5rem;
+        }
+
+        
 
         &>* {
             width: 100%;
@@ -34,7 +50,6 @@
 
             &:hover {
                 box-shadow: 1px 2px 8px 1px rgba(0, 0, 0, 0.5);
-                transform: translateY(-.2rem);
             }
 
             &:active {
@@ -65,7 +80,6 @@
         }
     }
 
-
     &__list {
         font-size: 2.5rem;
         font-weight: 400;
@@ -74,11 +88,12 @@
         text-align: center;
 
         &--item {
-            text-shadow: 1px 1px 4px $black;
+            text-shadow: 0px 1px 3px $black;
+
 
             &:first-of-type {
-                font-size: 3.3rem;
-                font-weight: 700;
+                font-size: 5rem;
+                letter-spacing: 4px;
             }
 
             &:not(:last-child) {
@@ -87,10 +102,15 @@
         }
     }
 
+    &--active {
+        top: 50%;
+        left: 50%;
+    }
+
     &__toggle {
         position: absolute;
-        top: -1rem;
-        right: -6rem;
+        top: 0;
+        right: 0;
         color: $color-orange-dark;
         font-size: 5rem;
         cursor: pointer;
@@ -102,36 +122,25 @@
 
         &::before {
             position: absolute;
-            left: -4rem;
+            left: 3rem;
+            top: 7rem;
             font-family: "Font Awesome 5 Free";
             font-weight: 100;
             content: "\f0e0";
             animation: shake 3s linear -10s infinite;
+
+            @include respond(px1100) {
+                top: 4.5rem;
+            }
+        }
+
+        &::after {
+            position: absolute;
+            top: 1rem;
+            left: -7rem;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 100;
+            content: "\f057";
         }
     }
-
-    &.active &__toggle::after {
-        font-family: "Font Awesome 5 Free";
-        font-weight: 100;
-        content: "\f057";
-    }
-
-    &.active &__toggle::before {
-
-        display: none;
-    }
-
-    &.active &__toggle {
-        top: .5rem;
-        right: 1rem;
-
-        &:hover {
-            transform: translate(.5rem, -.5rem);
-        }
-    }
-
-}
-
-.active {
-    left: 2rem;
 }

@@ -8,6 +8,7 @@
 }
 
 .heading-primary {
+    width: 100%;
     color: $color-grey-light-1;
     text-transform: uppercase;
     white-space: nowrap;
@@ -18,6 +19,10 @@
              0px 8px 13px rgba($black,0.1),
              0px 18px 23px rgba($black,0.1);
 
+    @include respond(px600) {
+         padding: 2rem 0;       
+    }
+
     
     &--main {
         display: inherit;
@@ -26,16 +31,33 @@
         font-weight: 400;
         animation-name: moveInRight;
         animation-duration: 1s;  
+
+        @include respond(px800) {
+            font-size: 6rem;
+            white-space: normal;
+        }
+
+        @include respond(px500) {
+            font-size: 5rem;
+            white-space: normal;
+        }
     }
 
     &--sub {
         display: inherit;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         letter-spacing: 1rem;
         font-weight: 700;
         animation-name: moveInLeft;
         animation-duration: 1s;
-        
+
+        @include respond(px800) {
+            font-size: 2.1rem;
+        }
+
+        @include respond(px500) {
+            font-size: 1.8rem;
+        }
     }
 }
 
@@ -50,9 +72,20 @@
     color: transparent;
     transition: all .2s;
 
+    @include respond(px900) {
+        letter-spacing: 1px;
+        font-size: 3rem;
+        margin: 0 1rem;
+    }
+
     &:hover {
         transform: scale(1.1) skew(2deg, 2deg);
-        text-shadow: .5rem 1rem 2rem rgba($black, .2);
+        
+
+        @include respond(px1400) {
+            transform: none;
+            text-shadow: 0;
+        }
 
         & .heading-secondary--span {
             transform: rotate(0);
@@ -66,6 +99,15 @@
         font-weight: 300;
         transform: rotate(5deg);
         transition: all .2s;
+
+        @include respond(px1400) {
+            transform: rotate(0);
+        }
+
+        @include respond(px900) {
+            letter-spacing: 1px;
+            font-size: 3.2rem;
+        }
     }
 }
 
@@ -75,6 +117,7 @@
     letter-spacing: 1.5px;
     text-transform: uppercase;
     color: $color-grey-dark-1;
+    text-align: center;
 
     &--modal {
         
@@ -82,24 +125,35 @@
 }
 
 .heading-quaternary {
-    font-size: 2rem;
+    width: 90%;
+    font-size: 1.7rem;
     font-weight: 400;
     color: $color-grey-light-1;
     letter-spacing: 2px;
     word-spacing: 3px;
     text-transform: uppercase;
     position: absolute;
-    @include center-box(80%);
+    @include center-box(85%);
     text-shadow: 2px 2px 5px black;
 
+    @include respond(px500) {
+        font-size: 1.5rem;
+        
+    }
+
+    @include respond(px1400) {
+        @include center-box(97%);
+    }
 }
 
 .paragraph {
     font-size: 1.8rem;
-    color: $color-grey-dark-2;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    line-height: 1.5;
+    color: $color-grey-dark-3;
+    letter-spacing: 1.5px;
+    word-spacing: 3px;
+    line-height: 1.7;
+
+    
 
     &:not(:last-child) {
         margin-bottom: 3rem;
@@ -125,6 +179,10 @@
     }
 
     &--modal {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
+    }
+
+    &--footer {
+        color: $color-grey-light-1;
     }
 }

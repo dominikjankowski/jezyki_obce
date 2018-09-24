@@ -18,13 +18,25 @@
 
 <body>
 
-
-    <div class="navigation"></div>
+    <div class="navigation">
+        <div class="navigation__button" id="menu-but">
+            <span class="navigation__icon"></span>
+        </div>
+        <div class="navigation__background" id="menu-bg"></div>
+        <nav class="navigation__nav" id="menu-nav">
+            <ul class="navigation__list u-center-text">
+                <li class="navigation__item"><a href="#how-learn" class="navigation__link">nauka języków obcych</a></li>
+                <li class="navigation__item"><a href="#advantages" class="navigation__link">korzyśći jakie osiągniesz</a></li>
+                <li class="navigation__item"><a href="#bazinga" class="navigation__link">jakich języków ja uczę</a></li>
+                <li class="navigation__item"><a href="#myoffer" class="navigation__link">moja oferta nauczania</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <header class="header">
         <div class="header__text-box u-center-text">
-            <h1 class="heading-primary u-margin-bottom-medium">
-                <span class="heading-primary--main u-margin-bottom-small">Twoja przygoda</span>
+            <h1 class="heading-primary u-margin-bottom-small">
+                <span class="heading-primary--main u-margin-bottom-medium">Twoja przygoda</span>
                 <span class="heading-primary--sub">z językami obcymi</span>
             </h1>
             <a data-scroll href="#bazinga" class="btn btn--header btn--animated" id="scrollToLanguages">Zaczyna się
@@ -34,10 +46,10 @@
     </header>
 
     <main>
-        <section class="section-about">
+        <section class="section-about" id="how-learn">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
-                    Słowo o nauce języków <span class="heading-secondary--span">nie</span> takich obcych!
+                    o nauce języków <span class="heading-secondary--span">nie</span> takich obcych!
                 </h2>
             </div>
             <div class="row">
@@ -68,7 +80,7 @@
             </div>
             </div>
         </section>
-        <section class="section-future">
+        <section class="section-future" id="advantages">
             <div class="row">
                 <div class="col-1-of-4">
                     <div class="future-box">
@@ -115,12 +127,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--united-kingdom">
-                                <p>J. Angielski</p>
+                                <p >Angielski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Angielski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -131,7 +144,8 @@
                                     <p class="back-content__left--paragraph">konwersacje</p>
                                 </div>
                                 <div class="back-content__right">
-                                    <a download href="download/zestaw-rekrutacyjny.pdf" class="btn btn--card">Moje Materiały<i class="back-content__right--icon icon-basic-server-download"></i></a>
+                                    <a download href="download/zestaw-rekrutacyjny.pdf" class="btn btn--card">Moje
+                                        Materiały<i class="back-content__right--icon icon-basic-server-download"></i></a>
                                     <a href="#" class="btn btn--card">Sprawdź się<i class="back-content__right--icon icon-basic-sheet-pen"></i></a>
                                 </div>
                             </div>
@@ -142,12 +156,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--germany">
-                                <p>J. Niemiecki</p>
+                                <p>Niemiecki</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                        <p class="back-content__left--paragraph">Niemiecki</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -171,12 +186,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--russia">
-                                <p>J. Rosyjski</p>
+                                <p>Rosyjski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Rosyjski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -196,12 +212,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--spain">
-                                <p>J. Hiszpański</p>
+                                <p>Hiszpański</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                        <p class="back-content__left--paragraph">Hiszpański</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -223,12 +240,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--france">
-                                <p>J. Francuski</p>
+                                <p>Francuski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                        <p class="back-content__left--paragraph">Francuski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -248,12 +266,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--italy">
-                                <p>J. Włoski</p>
+                                <p>Włoski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Włoski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -275,12 +294,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--finland">
-                                <p>J. Fiński</p>
+                                <p>Fiński</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Fiński</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -300,12 +320,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--norway">
-                                <p>J. Norweski</p>
+                                <p>Norweski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Norweski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -327,12 +348,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--china">
-                                <p>J. Chiński</p>
+                                <p>Chiński</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Chiński</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -352,12 +374,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--kenya">
-                                <p>J. Suahili</p>
+                                <p>Suahili</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Suahili</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -379,12 +402,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--arabic">
-                                <p>J. Arabski</p>
+                                <p>Arabski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Arabski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -404,12 +428,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--mongolia">
-                                <p>J. Mongolski</p>
+                                <p>Mongolski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Mongolski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -431,12 +456,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--tibet">
-                                <p>J. Tybetański</p>
+                                <p>Tybetański</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Tybetański</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -456,12 +482,13 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--indonesia">
-                                <p>J. Indonezyjski</p>
+                                <p>Indonezyjski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
+                                    <p class="back-content__left--paragraph">Indonezyjski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -479,7 +506,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-teacher">
+        <section class="section-teacher" id="myoffer">
             <div class="u-center-text u-margin-bottom-large">
                 <h2 class="heading-secondary">
                     dlaczego chcę być twoim <span class="heading-secondary--span">nauczycielem</span>
@@ -619,7 +646,7 @@
                                     <figure class="figure" id="figure-2">
                                         <img class="about-me__img" src="img/book-2.jpg" alt="Książka poświęcona jest tematyce mobingu, często spotykanemu zjawisku w obecnych czasach"
                                             style="width:100%">
-                                        <figcaption>"PRZEŻYŁAM MOBBING"</figcaption>
+                                        <figcaption>"PRZEŻYŁAM MOBBING" EWA POLLEN</figcaption>
                                         <p class="figure__paragraph">Czytaj więcej</p>
                                     </figure>
                                 </div>
@@ -638,8 +665,8 @@
     </main>
     <footer class="footer u-center-text">
         <a href="#sidebar" class="btn btn--animated btn--footer u-margin-bottom-medium toggle-btn">Kontakt</a>
-        <p class="paragraph ">Copyright © 2018 by Bogumiła Doliniak. All rights reserved.</p>
-        <p class="paragraph ">Icon made by Freepik from <a href="https://www.flaticon.com/" class=" btn btn--flaticon"
+        <p class="paragraph paragraph--footer">Copyright © 2018 by ALLIANCE. All rights reserved.</p>
+        <p class="paragraph paragraph--footer">Icon made by Freepik from <a href="https://www.flaticon.com/" class=" btn btn--flaticon"
                 target="_blank" rel="noopener noreferrer">www.flaticon.com</a></p>
     </footer>
 
@@ -691,19 +718,21 @@
 
     <div class="sidebar" id="sidebar">
         <div class="sidebar__toggle toggle-btn"></div>
-        <form action="https://formspree.io/dondomalesko1234@gmail.com" method="post" class="sidebar__form">
-            <input class="sidebar__form--input" type="text" name="Name" placeholder="Imię i Nazwisko" required>
-            <input class="sidebar__form--input" type="email" name="Email" placeholder="Email" required>
-            <textarea class="sidebar__form--textarea" name="Message" cols="40" rows="10" placeholder="Wyślij mi wiadomość"
-                required></textarea>
-            <input class="btn btn--header btn--animated sidebar__form--submit" type="submit" value="Wyślij">
-        </form>
+        <div class="sidebar__content">
+            <form action="https://formspree.io/dondomalesko1234@gmail.com" method="post" class="sidebar__form">
+                <input class="sidebar__form--input" type="text" name="Name" placeholder="Imię i Nazwisko" required>
+                <input class="sidebar__form--input" type="email" name="Email" placeholder="Email" required>
+                <textarea class="sidebar__form--textarea" name="Message" cols="40" rows="10" placeholder="Wyślij mi wiadomość"
+                    required></textarea>
+                <input class="btn btn--header btn--animated sidebar__form--submit" type="submit" value="Wyślij">
+            </form>
 
-        <ul class="sidebar__list">
-            <li class="sidebar__list--item">Bogumiła Doliniak</li>
-            <li class="sidebar__list--item">Ulica Ludwika Kondratowicza 18</li>
-            <li class="sidebar__list--item">03-285 Warszawa (Targówek)</li>
-        </ul>
+            <ul class="sidebar__list">
+                <li class="sidebar__list--item">Bogumiła</li>
+                <li class="sidebar__list--item">Ulica Ludwika Kondratowicza 18</li>
+                <li class="sidebar__list--item">03-285 Warszawa (Targówek)</li>
+            </ul>
+        </div>
     </div>
 
 
