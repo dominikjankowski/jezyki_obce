@@ -16,6 +16,9 @@
         display: flex;
         flex-direction: row;
         padding: 0 2rem;
+        height: 100%;
+        overflow: scroll;
+        padding: 8rem 0;
 
         @include respond(px500) {
             flex-wrap: wrap;
@@ -109,12 +112,13 @@
 
     &__toggle {
         position: absolute;
-        top: 0;
+        top: 0rem;
         right: 0;
         color: $color-orange-dark;
         font-size: 5rem;
         cursor: pointer;
         transition: all .3s;
+        display: inline-block;
 
         &:hover {
             transform: translate(.5rem, -.5rem);
@@ -137,7 +141,7 @@
         &::after {
             position: absolute;
             top: 1rem;
-            left: -7rem;
+            left: -6rem;
             font-family: "Font Awesome 5 Free";
             font-weight: 100;
             content: "\f057";
