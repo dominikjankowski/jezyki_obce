@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta content="width=device-width,initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Document</title>
+    <title>Jezyki Obce Warszawa</title>
     <!-- Icons -->
     <link rel="stylesheet" href="css/icons/basic/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
@@ -14,6 +14,26 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,700" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.min.css">
+    <!--Favicons  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JS -->
+    <script type="text/javascript" src="js/script.min.js" defer></script>
 </head>
 
 <body>
@@ -75,7 +95,15 @@
                         pomoc jest nieodzowna.</p>
                 </div>
                 <div class="col-1-of-2">
-                    <div class="composition"> <img src="img/teacher-big.png" alt="Woman in red sweatshirt" class="composition__photo"></div>
+
+                    <div class="composition">
+                        <picture>
+                            <source class="composition__photo" srcset="img/nauczyciel-jezykow-obcych-small-1x-min.png 1x, img/nauczyciel-jezykow-obcych-small-2x-min.png 2x"
+                                media="(max-width:25em)">
+                            <img class="composition__photo" srcset="img/nauczyciel-jezykow-obcych-big-1x-min.png 1x, img/nauczyciel-jezykow-obcych-big-2x-min.png 2x"
+                                src="img/nauczyciel-jezykow-obcych-big-2x-min.png" alt="nauczyciel jezykow obcych udzielający korepetycji">
+                        </picture>
+                    </div>
                 </div>
             </div>
             </div>
@@ -127,7 +155,7 @@
                     <div class="card">
                         <div class="card__side card__side--front">
                             <div class="front-content front-content--united-kingdom">
-                                <p >Angielski</p>
+                                <p>Angielski</p>
                             </div>
                         </div>
                         <div class="card__side card__side--back">
@@ -162,7 +190,7 @@
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
-                                        <p class="back-content__left--paragraph">Niemiecki</p>
+                                    <p class="back-content__left--paragraph">Niemiecki</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -218,7 +246,7 @@
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
-                                        <p class="back-content__left--paragraph">Hiszpański</p>
+                                    <p class="back-content__left--paragraph">Hiszpański</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -246,7 +274,7 @@
                         <div class="card__side card__side--back">
                             <div class="back-content">
                                 <div class="back-content__left">
-                                        <p class="back-content__left--paragraph">Francuski</p>
+                                    <p class="back-content__left--paragraph">Francuski</p>
                                     <p class="back-content__left--paragraph">egzamin gimnazjalny</p>
                                     <p class="back-content__left--paragraph">egzamin maturalny</p>
                                     <p class="back-content__left--paragraph">certyfikaty międzynarodowe</p>
@@ -638,14 +666,14 @@
                                     consectetur adipisicing elit. Molestias </p>
                                 <div class="figure-container">
                                     <figure class="figure" id="figure-1">
-                                        <img class="about-me__img" src="img/book-1.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie"
-                                            style="width:100%">
+                                        <img class="about-me__img" srcset="img/milosierny-jezu-about-1x-min.jpg 1x, img/milosierny-jezu-about-2x-min.jpg 2x" src="img/milosierny-jezu-about-2x-min.jpg"
+                                            alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie">
                                         <figcaption>"DZIĘKUJĘ CI ZA WSZYSTKO, MIŁOSIERNY JEZU"</figcaption>
                                         <p class="figure__paragraph">Czytaj więcej</p>
                                     </figure>
                                     <figure class="figure" id="figure-2">
-                                        <img class="about-me__img" src="img/book-2.jpg" alt="Książka poświęcona jest tematyce mobingu, często spotykanemu zjawisku w obecnych czasach"
-                                            style="width:100%">
+                                        <img class="about-me__img" srcset="img/przezylam-mobing-about-1x-min.jpg 1x, img/przezylam-mobing-about-2x-min.jpg 2x" src="img/przezylam-mobing-about-2x-min.jpg"
+                                            alt="Książka poświęcona jest tematyce mobingu, często spotykanemu zjawisku w obecnych czasach">
                                         <figcaption>"PRZEŻYŁAM MOBBING" EWA POLLEN</figcaption>
                                         <p class="figure__paragraph">Czytaj więcej</p>
                                     </figure>
@@ -688,8 +716,13 @@
             </div>
             <div class="modal__content--right">
                 <span class="modal__close" id="close-1">&times</span>
-                <img src="img/book-1.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie"
-                    class="modal__img">
+                <picture>
+                    <source class="modal__img" srcset="img/milosierny-jezu-modal-small-min.jpg" media="(max-width: 25em)">
+                    <source class="modal__img" srcset="img/milosierny-jezu-modal-medium-min.jpg" media="(max-width: 43.75em)">
+                    <img srcset="img/milosierny-jezu-modal-big-min.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie" src="img/milosierny-jezu-modal-big-min.jpg"
+                        class="modal__img">
+                </picture>
+
             </div>
         </div>
     </div>
@@ -710,8 +743,12 @@
             </div>
             <div class="modal__content--right">
                 <span class="modal__close" id="close-2">&times</span>
-                <img src="img/book-2.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie"
-                    class="modal__img">
+                <picture>
+                    <source class="modal__img" srcset="img/przezylam-mobing-modal-small-min.jpg" media="(max-width: 25em)">
+                    <source class="modal__img" srcset="img/przezylam-mobing-modal-medium-min.jpg" media="(max-width: 43.75em)">
+                    <img srcset="img/przezylam-mobing-modal-big-min.jpg" alt="Niniejsza książka jest dziękczynieniem Panu Bogu za jego dobroć, miłość i miłosierdzie" src="img/przezylam-mobing-modal-big-min.jpg"
+                        class="modal__img">
+                </picture>
             </div>
         </div>
     </div>
@@ -734,10 +771,5 @@
             </ul>
         </div>
     </div>
-
-
-    <script src="js/script.min.js"></script>
-
 </body>
-
 </html>

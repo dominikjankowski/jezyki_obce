@@ -2,7 +2,7 @@
  * Basic typography style for copy text
  */
 
- body {
+body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
@@ -15,22 +15,22 @@
     padding: 7rem 0;
     animation-duration: 3s;
     border-radius: 20px;
-    text-shadow: 0px 4px 3px rgba($black,0.4),
-             0px 8px 13px rgba($black,0.1),
-             0px 18px 23px rgba($black,0.1);
+    text-shadow: 0px 4px 3px rgba($black, 0.4),
+        0px 8px 13px rgba($black, 0.1),
+        0px 18px 23px rgba($black, 0.1);
 
     @include respond(px600) {
-         padding: 2rem 0;       
+        padding: 2rem 0;
     }
 
-    
+
     &--main {
         display: inherit;
         font-size: 7rem;
         letter-spacing: 2rem;
         font-weight: 400;
         animation-name: moveInRight;
-        animation-duration: 1s;  
+        animation-duration: 1s;
 
         @include respond(px800) {
             font-size: 6rem;
@@ -80,11 +80,10 @@
 
     &:hover {
         transform: scale(1.1) skew(2deg, 2deg);
-        
+
 
         @include respond(px1400) {
             transform: none;
-            text-shadow: 0;
         }
 
         & .heading-secondary--span {
@@ -119,9 +118,7 @@
     color: $color-grey-dark-1;
     text-align: center;
 
-    &--modal {
-        
-    }
+    &--modal {}
 }
 
 .heading-quaternary {
@@ -138,7 +135,7 @@
 
     @include respond(px500) {
         font-size: 1.5rem;
-        
+
     }
 
     @include respond(px1400) {
@@ -153,7 +150,7 @@
     word-spacing: 3px;
     line-height: 1.7;
 
-    
+
 
     &:not(:last-child) {
         margin-bottom: 3rem;

@@ -1,9 +1,13 @@
 .card {
     perspective: 150rem;
     position: relative;
-    min-height: 70rem;
+    min-height: 60rem;
     width: auto;
-    
+
+    @include respond(px1400) {
+        min-height: 70rem;
+    }
+
 
     &__side {
         font-size: 3rem;
@@ -20,12 +24,13 @@
 
         &--back {
             transform: rotateY(180deg);
+
             @include respond(px1400) {
                 transform: rotateY(0);
             }
         }
     }
-    
+
 
     &:hover &__side--front {
         transform: rotateY(-180deg);
@@ -43,7 +48,7 @@
 .front-content {
     height: 100%;
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     color: $white;
     display: flex;
@@ -54,16 +59,16 @@
 
 
 
-   
+
 
     & p {
         @include respond(px1400) {
-            opacity: 0; 
+            opacity: 0;
         }
     }
-    
+
     &--united-kingdom {
-        background-image:  url(../img/united-kingdom.svg);
+        background-image: url(../img/united-kingdom.svg);
     }
 
     &--germany {
@@ -71,11 +76,11 @@
     }
 
     &--russia {
-        background-image:url(../img/russia.svg);
+        background-image: url(../img/russia.svg);
     }
 
     &--italy {
-        background-image:url(../img/italy.svg);
+        background-image: url(../img/italy.svg);
         color: $black;
     }
 
@@ -90,40 +95,40 @@
 
     &--finland {
         background-image: url(../img/finland.svg);
-        
+
     }
 
-    &--norway{
+    &--norway {
         background-image: url(../img/norway.svg);
     }
 
-    &--china{
+    &--china {
         background-image: url(../img/china.svg);
         color: $white;
     }
 
-    &--kenya{
+    &--kenya {
         background-image: url(../img/kenya.svg);
         color: $black;
     }
 
-    &--arabic{
+    &--arabic {
         background-color: $color-green-arabic;
     }
 
-    &--mongolia{
+    &--mongolia {
         background-image: url(../img/mongolia.svg);
     }
-    
-    &--tibet{
+
+    &--tibet {
         background-image: url(../img/tibet.svg);
     }
-    
-    &--indonesia{
+
+    &--indonesia {
         background-image: url(../img/indonesia.svg);
         color: $black;
     }
-    
+
 }
 
 .back-content {
@@ -150,9 +155,9 @@
         padding: 2rem 8rem 3rem 8rem;
 
         @include respond(px500) {
-            padding: 2rem 2rem;
+            padding: 0 2rem;
         }
-        
+
         &--paragraph {
             line-height: 2.2;
             word-spacing: 4px;
@@ -162,7 +167,7 @@
 
                 @include respond(px1400) {
                     border-bottom: 1px solid $color-grey-dark-2;
-                  
+
                 }
             }
 
@@ -195,10 +200,8 @@
             -webkit-background-clip: text;
             color: transparent;
             margin-left: 1rem;
-        } 
+        }
     }
 }
 
-.card{
-
-}
+.card {}
