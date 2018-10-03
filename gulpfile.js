@@ -57,7 +57,7 @@ gulp.task("sass", function() {
             outputStyle: "compressed" //nested, expanded, compact, compressed
         }))
         .pipe(autoprefixer({
-            browsers: ["> 5%"]
+            browsers: ["last 5 versions"]
         })) //autoprefixy https://github.com/browserslist/browserslist#queries
         .pipe(csso())
         .pipe(rename({
