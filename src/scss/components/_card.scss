@@ -146,7 +146,7 @@
     @include respond(px1400) {
         color: $white;
         transform: rotateY(0);
-        background-image: linear-gradient(rgba($color-grey-dark-3, .8), rgba($color-grey-dark-3, .8));
+        background-image: linear-gradient(rgba($color-grey-dark-3, .7), rgba($color-grey-dark-3, .7));
         font-weight: 400;
     }
 
